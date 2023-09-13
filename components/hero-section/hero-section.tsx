@@ -15,7 +15,7 @@ import squareBottomBg from "@/assets/svgs/square-bottom-bg.svg";
 
 export function HeroSection() {
    return (
-      <div className="h-[calc(100vh-118px)] relative overflow-hidden">
+      <section className="h-[calc(100vh-118px)] relative overflow-hidden">
          <Container className="h-full relative">
             <div className="h-full grid place-content-center md:gap-4 md:pt-0 md:grid-cols-5 md:items-center">
                <div className="md:col-span-3 md:justify-self-start">
@@ -69,7 +69,7 @@ export function HeroSection() {
             <Image
                src={blurSvg}
                alt="Blur background detail 1"
-               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10"
             />
 
             <Image
@@ -83,6 +83,6 @@ export function HeroSection() {
             alt="Blur background detail 2"
             className="absolute bottom-0 w-full"
          />
-      </div>
+      </section>
    );
 }

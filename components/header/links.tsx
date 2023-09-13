@@ -1,7 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 import { Links } from "@/types/links";
-import { useState } from "react";
+import { DevGuiLogo } from "./devgui-logo";
 
 export function Links() {
    const allLinks = [
@@ -13,17 +15,64 @@ export function Links() {
 
    const [links, setLinks] = useState<Links[]>(allLinks);
 
-   const handleLinkClick = (clickedLink: Links) => {
+   function handleLinkClick(clickedLink: Links) {
       const updatedLinks = links.map((link) => ({
          ...link,
          active: link === clickedLink ? true : false,
       }));
 
       setLinks(updatedLinks);
-   };
+   }
+
+   // Ativar link ao scrollar a página
+   useEffect(() => {
+      function handleScroll() {
+         const scrollY = window.scrollY;
+
+         // Verificar se o usuário está no topo da página
+         if (scrollY === 0) {
+            // Se estiver no topo, desative todos os links
+            const updatedLinks = links.map((link) => ({
+               ...link,
+               active: false,
+            }));
+            setLinks(updatedLinks);
+         }
+
+         // Percorra todas as seções e verifique qual está visível
+         for (const link of links) {
+            const section = document.querySelector(
+               `${link.href}`
+            ) as HTMLElement;
+            if (section) {
+               const sectionTop = section.offsetTop - 150;
+               const sectionHeight = section.offsetHeight;
+
+               if (
+                  scrollY >= sectionTop &&
+                  scrollY < sectionTop + sectionHeight
+               ) {
+                  // A seção está visível, então atualize os links de navegação
+                  handleLinkClick(link);
+               }
+            }
+         }
+      }
+
+      // Ouvinte de scroll para chamar a função handleScroll
+      window.addEventListener("scroll", handleScroll);
+
+      // Remover o ouvinte de scroll quando o componente é desmontado
+      return () => {
+         window.removeEventListener("scroll", handleScroll);
+      };
+   }, [links]);
 
    return (
-      <nav>
+      <nav className="flex items-center justify-between">
+         <a href="#">
+            <DevGuiLogo />
+         </a>
          <ul className="flex gap-10">
             {links.map((link) => (
                <li key={link.text} className={`tracking-wider`}>

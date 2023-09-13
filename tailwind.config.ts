@@ -24,6 +24,10 @@ const config: Config = {
                100: "#59F8BE",
                200: "#1DD69E",
             },
+            customgrey: {
+               100: "#FBFBFB",
+               200: "#F2F2F2",
+            },
          },
          animation: {
             "spin-3": "spin 3s linear infinite",
