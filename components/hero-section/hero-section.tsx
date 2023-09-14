@@ -38,12 +38,18 @@ export function HeroSection() {
                      </h2>
                      <span className="md:text-lg flex items-center gap-2 mt-6">
                         Localizado em Brotas - SP
-                        <Emoji symbol="🌎" label="Earth Icon" />
+                        <Emoji
+                           role="img"
+                           aria-label="Earth icon img"
+                           aria-hidden="true"
+                        >
+                           🌎
+                        </Emoji>
                      </span>
                   </div>
                </div>
                <div className="hidden md:block md:justify-self-center lg:col-span-2 lg:justify-self-end">
-                  <HeroImg width={500} />
+                  <HeroImg width={530} className="max-[940px]:w-[440px]" />
                </div>
             </div>
             <Image

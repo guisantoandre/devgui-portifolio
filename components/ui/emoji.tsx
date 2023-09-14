@@ -1,18 +1,12 @@
-"use client";
-
 interface Props {
    symbol: string;
    label?: string;
 }
 
-export function Emoji({ symbol, label }: Props) {
-   return (
-      <span
-         role="img"
-         aria-label={label ? label : ""}
-         aria-hidden={label ? true : false}
-      >
-         {symbol}
-      </span>
-   );
+import React from "react";
+
+type EmojiProps = React.ComponentProps<"span">;
+
+export function Emoji({ children, ...props }: EmojiProps) {
+   return <span>{children}</span>;
 }

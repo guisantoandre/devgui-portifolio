@@ -27,6 +27,7 @@ const config: Config = {
             customgrey: {
                100: "#FBFBFB",
                200: "#F2F2F2",
+               300: "#68727D",
             },
          },
          animation: {

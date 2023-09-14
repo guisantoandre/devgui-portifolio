@@ -1,4 +1,10 @@
-export function HeroImg({ width = 528 }: { width?: number }) {
+import React from "react";
+
+type HeroImgProps = React.ComponentProps<"svg"> & {
+   width: number;
+};
+
+export function HeroImg({ width = 528, ...props }: HeroImgProps) {
    return (
       <svg
          width={width}
@@ -6,6 +12,7 @@ export function HeroImg({ width = 528 }: { width?: number }) {
          viewBox="0 0 528 579"
          fill="none"
          xmlns="http://www.w3.org/2000/svg"
+         {...props}
       >
          <g id="hero-img">
             <rect

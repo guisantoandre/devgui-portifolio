@@ -15,7 +15,7 @@ export function Links() {
 
    const [links, setLinks] = useState<Links[]>(allLinks);
 
-   function handleLinkClick(clickedLink: Links) {
+   function handleClickedLink(clickedLink: Links) {
       const updatedLinks = links.map((link) => ({
          ...link,
          active: link === clickedLink ? true : false,
@@ -39,8 +39,8 @@ export function Links() {
             setLinks(updatedLinks);
          }
 
-         // Percorra todas as seções e verifique qual está visível
-         for (const link of links) {
+         // Percorre todas as seções e verifica qual está visível
+         for (let link of links) {
             const section = document.querySelector(
                `${link.href}`
             ) as HTMLElement;
@@ -53,7 +53,7 @@ export function Links() {
                   scrollY < sectionTop + sectionHeight
                ) {
                   // A seção está visível, então atualize os links de navegação
-                  handleLinkClick(link);
+                  handleClickedLink(link);
                }
             }
          }
@@ -86,7 +86,7 @@ export function Links() {
                            : ""
                      }
                      `}
-                     onClick={() => handleLinkClick(link)}
+                     onClick={() => handleClickedLink(link)}
                   >
                      {link.text}
                   </a>

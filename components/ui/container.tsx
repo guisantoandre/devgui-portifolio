@@ -1,9 +1,8 @@
-interface Props {
-   children: React.ReactNode;
-   className?: string;
-}
+import React from "react";
 
-export function Container({ children, className }: Props) {
+type ContainerProps = React.ComponentProps<"div">;
+
+export function Container({ children, className }: ContainerProps) {
    return (
       <div className={`w-full max-w-[1280px] mx-auto px-5 ${className}`}>
          {children}
