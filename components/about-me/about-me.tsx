@@ -8,8 +8,6 @@ import detail1 from "@/assets/svgs/aboutme-detail1.svg";
 import detail2 from "@/assets/svgs/aboutme-detail2.svg";
 
 export function AboutMe() {
-   function handleClick() {}
-
    return (
       <section
          id="about-me"
@@ -39,7 +37,7 @@ export function AboutMe() {
                            <Link
                               href="https://github.com/guisantoandre"
                               target="_blank"
-                              className="text-customgreen-100 hover:underline"
+                              className="text-customgreen-100 underline"
                            >
                               Git.
                            </Link>

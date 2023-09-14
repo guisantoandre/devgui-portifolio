@@ -10,7 +10,7 @@ export default function Courses({ data }: CoursesProps) {
          <h3 className="mb-4 uppercase font-bold text-sm flex items-center gap-2 text-customgrey-300 before:inline-block before:bg-[url('/notebook-icon.svg')] before:w-6 before:h-6 before:bg-contain before:bg-no-repeat">
             Cursos intensivos
          </h3>
-         <ul className="space-y-3">
+         <ul className="space-y-2">
             {data.map((item) => (
                <li
                   key={item.title}

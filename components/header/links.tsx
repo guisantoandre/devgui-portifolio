@@ -79,7 +79,7 @@ export function Links() {
                   <a
                      href={link.href}
                      className={`
-                     relative after:block after:absolute after:w-[0%] after:h-[2px] after:duration-100  after:bg-white hover:after:w-[60%]
+                     relative after:block after:absolute after:w-[0%] after:h-[2px] after:duration-100 after:bg-white hover:after:w-[60%]
                      ${
                         link.active
                            ? "after:block after:w-[60%] after:h-[2px] after:bg-white"

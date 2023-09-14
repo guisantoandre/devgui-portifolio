@@ -8,6 +8,8 @@ import {
 import { Knowledges } from "./knowledges";
 import Technologies from "./technologies";
 import Courses from "./courses";
+import detailBg from "@/assets/svgs/experience-detail-bg.svg";
+import Image from "next/image";
 
 export function Experience() {
    return (
@@ -15,15 +17,25 @@ export function Experience() {
          id="experience"
          className="scroll-mt-36 bg-customgrey-100 rounded-t-[24px] text-customblue-400"
       >
-         <Container className="py-20 h-full flex flex-col items-center">
+         <Container className="relative py-20 flex flex-col items-center">
             <Title className="mb-20">Experiência</Title>
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
                <Knowledges data={knowledgesData} />
                <div>
                   <Technologies data={technologiesData} />
                   <Courses data={coursesData} />
                </div>
             </div>
+            <Image
+               src={detailBg}
+               alt="Background detail svg"
+               className="hidden md:block md:absolute md:left-4"
+            />
+            <Image
+               src={detailBg}
+               alt="Background detail svg"
+               className="hidden md:block md:absolute md:right-4 md:rotate-90 lg:right-4 lg:bottom-20 lg:rotate-180"
+            />
          </Container>
       </section>
    );
