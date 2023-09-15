@@ -6,6 +6,7 @@ import { Title } from "@/components/ui/title";
 import meSvg from "@/assets/svgs/me.svg";
 import detail1 from "@/assets/svgs/aboutme-detail1.svg";
 import detail2 from "@/assets/svgs/aboutme-detail2.svg";
+import cornerDetail from "@/assets/svgs/aboutme-corner-detail.svg";
 
 export function AboutMe() {
    return (
@@ -55,20 +56,25 @@ export function AboutMe() {
                <Image
                   src={detail2}
                   alt="About me detail svg"
+                  className="hidden md:absolute md:block md:bottom-[5%] md:left-[35%]"
+               />
+               <Image
+                  src={cornerDetail}
+                  alt="About me detail svg"
                   className="hidden md:block md:absolute md:-top-[5%] md:left-0"
                />
                <Image
-                  src={detail2}
+                  src={cornerDetail}
                   alt="About me detail svg"
                   className="hidden md:block md:absolute md:-top-[5%] md:right-0 rotate-90"
                />
                <Image
-                  src={detail2}
+                  src={cornerDetail}
                   alt="About me detail svg"
                   className="hidden md:block md:absolute md:bottom-0 md:right-0 rotate-180"
                />
                <Image
-                  src={detail2}
+                  src={cornerDetail}
                   alt="About me detail svg"
                   className="hidden md:block md:absolute md:bottom-0 md:left-0 -rotate-90"
                />
