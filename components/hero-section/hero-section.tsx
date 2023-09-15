@@ -11,7 +11,7 @@ import arrowSvg from "@/assets/svgs/arrow-detail.svg";
 import circleSvg from "@/assets/svgs/circle-detail.svg";
 import squareSvg from "@/assets/svgs/square-detail.svg";
 import blurSvg from "@/assets/svgs/blur-detail.svg";
-import squareBottomBg from "@/assets/svgs/square-bottom-bg.svg";
+import squareBottomBg from "@/assets/svgs/hero-square-bottom-bg.svg";
 
 export function HeroSection() {
    return (
@@ -86,7 +86,7 @@ export function HeroSection() {
          </Container>
          <Image
             src={squareBottomBg}
-            alt="Blur background detail 2"
+            alt="Square bottom svg background"
             className="absolute bottom-0 w-full"
          />
       </section>

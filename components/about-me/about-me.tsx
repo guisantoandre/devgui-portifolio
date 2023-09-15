@@ -14,8 +14,10 @@ export function AboutMe() {
          id="about-me"
          className="scroll-mt-36 bg-customblue-400 min-h-screen"
       >
-         <Container className="py-20 min-h-screen flex flex-col items-center">
-            <Title isBlue>Sobre mim</Title>
+         <Container className="relative py-20 min-h-screen flex flex-col items-center">
+            <Title isBlue className="md:mb-6">
+               Sobre mim
+            </Title>
             <div className="relative flex-1 grid grid-cols-1 gap-4 place-items-center mt-20 md:grid-cols-3 md:mt-0">
                <div className="md:col-span-1 md:justify-self-start z-10">
                   <Image src={meSvg} alt="Profile picture" />
@@ -58,27 +60,27 @@ export function AboutMe() {
                   alt="About me detail svg"
                   className="hidden md:absolute md:block md:bottom-[5%] md:left-[35%]"
                />
-               <Image
-                  src={cornerDetail}
-                  alt="About me detail svg"
-                  className="hidden md:block md:absolute md:-top-[5%] md:left-0"
-               />
-               <Image
-                  src={cornerDetail}
-                  alt="About me detail svg"
-                  className="hidden md:block md:absolute md:-top-[5%] md:right-0 rotate-90"
-               />
-               <Image
-                  src={cornerDetail}
-                  alt="About me detail svg"
-                  className="hidden md:block md:absolute md:bottom-0 md:right-0 rotate-180"
-               />
-               <Image
-                  src={cornerDetail}
-                  alt="About me detail svg"
-                  className="hidden md:block md:absolute md:bottom-0 md:left-0 -rotate-90"
-               />
             </div>
+            <Image
+               src={cornerDetail}
+               alt="About me detail svg"
+               className="hidden md:block md:absolute md:top-20 md:left-5"
+            />
+            <Image
+               src={cornerDetail}
+               alt="About me detail svg"
+               className="hidden md:block md:absolute md:top-20 md:right-5 rotate-90"
+            />
+            <Image
+               src={cornerDetail}
+               alt="About me detail svg"
+               className="hidden md:block md:absolute md:bottom-20 md:right-5 rotate-180"
+            />
+            <Image
+               src={cornerDetail}
+               alt="About me detail svg"
+               className="hidden md:block md:absolute md:bottom-20 md:left-5 -rotate-90"
+            />
          </Container>
       </section>
    );
