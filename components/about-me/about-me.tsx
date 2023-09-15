@@ -11,19 +11,15 @@ export function AboutMe() {
    return (
       <section
          id="about-me"
-         className="scroll-mt-36 bg-customblue-400 h-screen"
+         className="scroll-mt-36 bg-customblue-400 min-h-screen"
       >
-         <Container className="py-20 h-full flex flex-col items-center">
+         <Container className="py-20 min-h-screen flex flex-col items-center">
             <Title isBlue>Sobre mim</Title>
-            <div className="relative h-full grid grid-cols-1 gap-4 place-items-center mt-20 md:grid-cols-5 md:mt-0">
-               <div className="md:col-span-2 md:justify-self-start z-10">
-                  <Image
-                     src={meSvg}
-                     alt="Profile picture"
-                     className="max-[500px]:w-[80%] max-[500px]:m-auto"
-                  />
+            <div className="relative flex-1 grid grid-cols-1 gap-4 place-items-center mt-20 md:grid-cols-3 md:mt-0">
+               <div className="md:col-span-1 md:justify-self-start z-10">
+                  <Image src={meSvg} alt="Profile picture" />
                </div>
-               <div className="relative bg-customblue-300 border-[2px] border-customblue-100 border-dashed rounded-[3px] p-7 shadow-lg md:col-span-3 before:block before:w-[4px] before:h-7 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:absolute before:top-6 before:-left-1 z-10">
+               <div className="relative bg-customblue-300 border-[2px] border-customblue-100 border-dashed rounded-[3px] p-7 shadow-lg md:col-span-2 before:block before:w-[4px] before:h-7 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:absolute before:top-6 before:-left-1 z-10">
                   <div className="leading-[1.5] text-sm md:text-base">
                      <p className="mb-4">
                         Olá, meu nome é Guilherme, sou apaixonado por tecnologia
