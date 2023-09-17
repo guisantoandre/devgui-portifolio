@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import { Container } from "@/components/ui/container";
 import { Title } from "@/components/ui/title";
@@ -7,8 +10,26 @@ import meSvg from "@/assets/svgs/me.svg";
 import detail1 from "@/assets/svgs/aboutme-detail1.svg";
 import detail2 from "@/assets/svgs/aboutme-detail2.svg";
 import cornerDetail from "@/assets/svgs/aboutme-corner-detail.svg";
+import { RevealImg } from "@/components/ui/reveal-img";
+import { RevealSvg } from "../ui/reveal-svg";
 
 export function AboutMe() {
+   const textEntranceVariants = {
+      initial: {
+         opacity: 0,
+         x: -200,
+      },
+      animate: {
+         opacity: 1,
+         x: 0,
+         transition: {
+            duration: 1,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+         },
+      },
+   };
+
    return (
       <section
          id="about-me"
@@ -19,10 +40,21 @@ export function AboutMe() {
                Sobre mim
             </Title>
             <div className="relative flex-1 grid grid-cols-1 gap-4 place-items-center mt-20 md:grid-cols-3 md:mt-0">
-               <div className="md:col-span-1 md:justify-self-start z-10">
+               {/* Profile picture */}
+               <RevealImg>
                   <Image src={meSvg} alt="Profile picture" />
-               </div>
-               <div className="relative bg-customblue-300 border-[2px] border-customblue-100 border-dashed rounded-[3px] p-7 shadow-lg md:col-span-2 before:block before:w-[4px] before:h-7 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:absolute before:top-6 before:-left-1 z-10">
+               </RevealImg>
+
+               {/* Short text about me */}
+               <motion.div
+                  variants={textEntranceVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                     once: true,
+                  }}
+                  className="relative bg-customblue-300 border-[2px] border-customblue-100 border-dashed rounded-[3px] p-7 shadow-lg md:col-span-2 before:block before:w-[4px] before:h-7 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:absolute before:top-6 before:-left-1 z-10"
+               >
                   <div className="leading-[1.5] text-sm md:text-base">
                      <p className="mb-4">
                         Olá, meu nome é Guilherme, sou apaixonado por tecnologia
@@ -49,7 +81,7 @@ export function AboutMe() {
                         aprendizados.
                      </p>
                   </div>
-               </div>
+               </motion.div>
                <Image
                   src={detail1}
                   alt="About me detail svg"

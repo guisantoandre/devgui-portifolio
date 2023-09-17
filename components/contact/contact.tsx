@@ -2,21 +2,21 @@ import Image from "next/image";
 
 import { Container } from "@/components/ui/container";
 import { Title } from "@/components/ui/title";
-import squareTopSvg from "@/assets/svgs/contact-square-top-bg.svg";
-import { Emoji } from "../ui/emoji";
-import { sora } from "@/utils/fonts";
 import { SocialMedia } from "./social-media";
+import { sora } from "@/utils/fonts";
+import { Emoji } from "@/components/ui/emoji";
+import squareTopSvg from "@/assets/svgs/contact-square-top-bg.svg";
 
 export function Contact() {
    return (
-      <section id="contact" className="relative scroll-mt-36 min-h-[75vh]">
-         <Container className="pt-20 min-h-[75vh] flex flex-col">
+      <section id="contact" className="relative scroll-mt-36 min-h-[80vh]">
+         <Container className="pt-20 min-h-[80vh] flex flex-col">
             <div className="grid justify-items-center">
                <Title isBlue className="mb-20">
                   Contato
                </Title>
             </div>
-            <div className="max-w-lg text-right ml-auto mr-0 mb-10">
+            <div className="max-w-lg text-center mb-10 m-auto md:text-right md:ml-auto md:mr-0">
                <p
                   className={`${sora.className} text-2xl leading-[1.3] mb-3 md:text-3xl`}
                >
@@ -35,11 +35,11 @@ export function Contact() {
                   </Emoji>
                </p>
             </div>
-            <div className="flex-1 py-14 px-16 space-y-20 bg-[#D0EA33] rounded-t-[24px] text-customblue-400 flex flex-col justify-between max-[500px]:items-center">
+            <div className="flex-1 py-14 px-16 space-y-20 bg-customgreen-100 rounded-t-[12px] text-customblue-400 flex flex-col justify-between items-center md:items-start">
                <h2>
                   <a
                      href="mailto:import.devgui@gmail.com"
-                     className={`${sora.className} group text-2xl underline flex items-center gap-2 md:text-3xl`}
+                     className={`${sora.className} group text-2xl underline w-fit flex items-center gap-2 md:text-3xl`}
                   >
                      <img
                         src="/email-icon.svg"
