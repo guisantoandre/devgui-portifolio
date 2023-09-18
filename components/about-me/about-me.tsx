@@ -6,12 +6,10 @@ import { motion } from "framer-motion";
 
 import { Container } from "@/components/ui/container";
 import { Title } from "@/components/ui/title";
-import meSvg from "@/assets/svgs/me.svg";
 import detail1 from "@/assets/svgs/aboutme-detail1.svg";
 import detail2 from "@/assets/svgs/aboutme-detail2.svg";
 import cornerDetail from "@/assets/svgs/aboutme-corner-detail.svg";
 import { RevealImg } from "@/components/ui/reveal-img-animation";
-import { RevealSvg } from "../ui/reveal-svg-animation";
 
 export function AboutMe() {
    const textEntranceVariants = {
@@ -33,16 +31,21 @@ export function AboutMe() {
    return (
       <section
          id="about-me"
-         className="scroll-mt-36 bg-customblue-400 min-h-screen"
+         className="scroll-mt-24 bg-customblue-400 min-h-screen"
       >
          <Container className="relative py-20 min-h-screen flex flex-col items-center">
             <Title isBlue className="md:mb-6">
                Sobre mim
             </Title>
-            <div className="relative flex-1 grid grid-cols-1 gap-4 place-items-center mt-20 md:grid-cols-3 md:mt-0">
+            <div className="relative flex-1 grid grid-cols-1 gap-6 place-items-center mt-20 min-[900px]:grid-cols-3 md:mt-0">
                {/* Profile picture */}
-               <RevealImg>
-                  <Image src={meSvg} alt="Profile picture" />
+               <RevealImg className="relative w-full h-[300px] min-[800px]:h-[350px]">
+                  <Image
+                     src="/me.png"
+                     alt="Profile picture"
+                     fill
+                     className="object-contain"
+                  />
                </RevealImg>
 
                {/* Short text about me */}
@@ -53,7 +56,7 @@ export function AboutMe() {
                   viewport={{
                      once: true,
                   }}
-                  className="relative bg-customblue-300 border-[2px] border-customblue-100 border-dashed rounded-[3px] p-7 shadow-lg md:col-span-2 before:block before:w-[4px] before:h-7 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:absolute before:top-6 before:-left-1 z-10"
+                  className="relative bg-customblue-300 border-[2px] border-customblue-100 border-dashed rounded-[3px] p-7 shadow-lg min-[900px]:col-span-2 before:block before:w-[4px] before:h-7 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:absolute before:top-6 before:-left-1 z-10"
                >
                   <div className="leading-[1.5] text-sm md:text-base">
                      <p className="mb-4">

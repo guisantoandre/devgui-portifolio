@@ -7,10 +7,10 @@ const revealKnowledgeVariants = {
       translateX: 0,
    },
    animate: (index: number) => ({
-      translateX: 1500,
+      translateX: -1500,
       transition: {
-         delay: 0.15 * index,
-         duration: 0.8,
+         delay: 0.2 * index,
+         duration: 0.9,
       },
    }),
 };

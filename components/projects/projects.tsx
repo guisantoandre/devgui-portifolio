@@ -8,7 +8,7 @@ export function Projects() {
    return (
       <section
          id="projects"
-         className="scroll-mt-36 bg-customblue-400 min-h-[70vh]"
+         className="scroll-mt-24 bg-customblue-400 min-h-[70vh]"
       >
          <Container className="py-20 min-h-[70vh] flex flex-col items-center">
             <Title isBlue className="mb-20">

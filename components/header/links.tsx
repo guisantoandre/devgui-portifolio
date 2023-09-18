@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 
 import { Links } from "@/types/links";
-import { DevGuiLogo } from "./devgui-logo";
 
 export function Links() {
    const allLinks = [
@@ -71,7 +70,7 @@ export function Links() {
    return (
       <nav className="flex items-center justify-between">
          <a href="#">
-            <DevGuiLogo />
+            <img src="/devgui-logo.png" alt="Devgui logo" />
          </a>
          <ul className="flex gap-10">
             {links.map((link) => (

@@ -32,9 +32,9 @@ export function HeroSection() {
    return (
       <section className="h-[calc(100vh-118px)] relative overflow-hidden">
          <Container className="h-full relative">
-            <div className="h-full grid place-content-center md:gap-4 md:pt-0 md:grid-cols-5 md:items-center">
+            <div className="h-full grid place-content-center md:gap-4 min-[830px]:pt-0 min-[830px]:grid-cols-5 min-[830px]:items-center">
                {/* Hero text left */}
-               <div className="md:col-span-3 md:justify-self-start">
+               <div className="md:col-span-3 md:justify-self-start z-20">
                   <div className={`md:ml-[7%] ${sora.className}`}>
                      <motion.h2
                         variants={fadeInAnimationVariants}
@@ -45,7 +45,7 @@ export function HeroSection() {
                            delay: 0.2,
                            ease: "easeInOut",
                         }}
-                        className="relative max-w-[11ch] font-semibold leading-[1.2] text-[56px] max-[550px]:text-[40px] md:leading-[1.14] md:text-5xl lg:text-7xl before:content-['{'] before:inline-block before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:bg-clip-text before:text-transparent before:absolute before:ml-[-7%] after:content-['}'] after:inline-block after:bg-gradient-to-b after:from-customgreen-100 after:to-customgreen-200 after:bg-clip-text after:text-transparent after:absolute after:ml-[2%] z-10"
+                        className="relative max-w-[11ch] font-semibold leading-[1.2] text-[36px] min-[500px]:text-[48px] md:leading-[1.14] lg:text-7xl before:content-['{'] before:inline-block before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:bg-clip-text before:text-transparent before:absolute before:ml-[-7%] after:content-['}'] after:inline-block after:bg-gradient-to-b after:from-customgreen-100 after:to-customgreen-200 after:bg-clip-text after:text-transparent after:absolute after:ml-[2%] z-10"
                      >
                         Desenvolvedor Front End{" "}
                         <span className="text-customgreen-100">&</span>{" "}
@@ -84,8 +84,8 @@ export function HeroSection() {
                </div>
 
                {/* Hero img section right */}
-               <RevealImg className="hidden md:block md:justify-self-center lg:col-span-2 lg:justify-self-end">
-                  <HeroImg width={530} className="max-[940px]:w-[440px]" />
+               <RevealImg className="hidden min-[830px]:block min-[830px]:justify-self-center lg:col-span-2 lg:justify-self-end">
+                  <HeroImg width={530} className="max-[930px]:w-[425px]" />
                </RevealImg>
             </div>
 
@@ -93,7 +93,7 @@ export function HeroSection() {
                <Image
                   src={scrollSvg}
                   alt="Scroll icon detail"
-                  className="hidden md:block animate-bounce md:absolute md:bottom-[10%] md:left-1/2 md:transform md:-translate-x-1/2"
+                  className="absolute animate-bounce bottom-[10%] left-1/2 transform -translate-x-1/2"
                />
             </RevealSvg>
             <RevealSvg>

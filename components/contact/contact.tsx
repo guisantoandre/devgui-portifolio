@@ -9,7 +9,7 @@ import squareTopSvg from "@/assets/svgs/contact-square-top-bg.svg";
 
 export function Contact() {
    return (
-      <section id="contact" className="relative scroll-mt-36 min-h-[80vh]">
+      <section id="contact" className="relative scroll-mt-24 min-h-[80vh]">
          <Container className="pt-20 min-h-[80vh] flex flex-col">
             <div className="grid justify-items-center">
                <Title isBlue className="mb-20">
