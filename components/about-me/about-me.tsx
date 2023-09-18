@@ -10,8 +10,8 @@ import meSvg from "@/assets/svgs/me.svg";
 import detail1 from "@/assets/svgs/aboutme-detail1.svg";
 import detail2 from "@/assets/svgs/aboutme-detail2.svg";
 import cornerDetail from "@/assets/svgs/aboutme-corner-detail.svg";
-import { RevealImg } from "@/components/ui/reveal-img";
-import { RevealSvg } from "../ui/reveal-svg";
+import { RevealImg } from "@/components/ui/reveal-img-animation";
+import { RevealSvg } from "../ui/reveal-svg-animation";
 
 export function AboutMe() {
    const textEntranceVariants = {

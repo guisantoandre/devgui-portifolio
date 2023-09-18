@@ -7,8 +7,8 @@ import { sora } from "@/utils/fonts";
 import { HeroImg } from "./hero-img";
 import { Container } from "@/components/ui/container";
 import { Emoji } from "@/components/ui/emoji";
-import { RevealSvg } from "@/components/ui/reveal-svg";
-import { RevealImg } from "@/components/ui/reveal-img";
+import { RevealSvg } from "@/components/ui/reveal-svg-animation";
+import { RevealImg } from "@/components/ui/reveal-img-animation";
 import underlineSvg from "@/assets/svgs/underline-svg.svg";
 import scrollSvg from "@/assets/svgs/scroll-icon.svg";
 import arrowSvg from "@/assets/svgs/arrow-detail.svg";
@@ -107,7 +107,7 @@ export function HeroSection() {
                <Image
                   src={circleSvg}
                   alt="Circle icon detail"
-                  className="animate-spin-5 absolute bottom-[20%] left-[30%] -z-10"
+                  className="animate-spin-5 absolute bottom-[15%] left-[30%] -z-10"
                />
             </RevealSvg>
             <RevealSvg>

@@ -1,3 +1,5 @@
+import { RevealItems } from "./reveal-technologies-animation";
+
 type TechnologiesProps = {
    data: string[];
 };
@@ -9,13 +11,8 @@ export default function Technologies({ data }: TechnologiesProps) {
             Sou familiarizado com as seguintes tecnologias:
          </h3>
          <ul className="flex flex-wrap gap-5">
-            {data.map((tech) => (
-               <li
-                  key={tech}
-                  className="relative px-4 py-3 font-medium rounded-[3px] bg-customgrey-200 before:block before:w-[3px] before:h-4 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:absolute before:top-4 before:-left-[2px]"
-               >
-                  {tech}
-               </li>
+            {data.map((tech, index) => (
+               <RevealItems index={index}>{tech}</RevealItems>
             ))}
          </ul>
       </div>
