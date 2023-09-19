@@ -43,10 +43,13 @@ export function Knowledges({ data }: KnowledgesProps) {
                      {knowledge.title}
                   </h4>
                   {knowledge.text.map((item, index) => (
-                     <p className="flex items-center col-span-2 col-start-2 before:block before:bg-customgreen-100 before:rounded-full before:w-1 before:h-1 before:absolute before:-ml-6">
+                     <h5
+                        key={index}
+                        className="flex items-center col-sh3an-2 col-start-2 before:block before:bg-customgreen-100 before:rounded-full before:w-1 before:h-1 before:absolute before:-ml-6"
+                     >
                         {item}
                         <RevealKnowledges index={index} />
-                     </p>
+                     </h5>
                   ))}
                </li>
             ))}

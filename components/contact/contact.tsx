@@ -9,7 +9,10 @@ import squareTopSvg from "@/assets/svgs/contact-square-top-bg.svg";
 
 export function Contact() {
    return (
-      <section id="contact" className="relative scroll-mt-24 min-h-[80vh]">
+      <section
+         id="contact"
+         className="relative scroll-mt-8 min-h-[80vh] md:scroll-mt-10"
+      >
          <Container className="pt-20 min-h-[80vh] flex flex-col">
             <div className="grid justify-items-center">
                <Title isBlue className="mb-20">
@@ -35,11 +38,11 @@ export function Contact() {
                   </Emoji>
                </p>
             </div>
-            <div className="flex-1 py-14 px-16 space-y-20 bg-customgreen-100 rounded-t-[12px] text-customblue-400 flex flex-col justify-between items-center md:items-start">
+            <div className="flex-1 py-11 px-9 space-y-20 bg-customgreen-100 rounded-t-[12px] text-customblue-400 flex flex-col justify-between items-center md:py-14 md:px-16 md:items-start">
                <h2>
                   <a
                      href="mailto:import.devgui@gmail.com"
-                     className={`${sora.className} group text-2xl underline w-fit flex items-center gap-2 md:text-3xl`}
+                     className={`${sora.className} group text-lg font-medium min-[450px]:text-2xl min-[450px]:font-normal underline w-fit flex items-center gap-2 md:text-3xl`}
                   >
                      <img
                         src="/email-icon.svg"

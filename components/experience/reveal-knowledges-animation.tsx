@@ -9,7 +9,7 @@ const revealKnowledgeVariants = {
    animate: (index: number) => ({
       translateX: -1500,
       transition: {
-         delay: 0.2 * index,
+         delay: 0.3 * index,
          duration: 0.9,
       },
    }),
@@ -25,6 +25,7 @@ export function RevealKnowledges({ index }: { index: number }) {
             once: true,
          }}
          custom={index}
+         key={index}
          className="absolute inset-0 bg-customgreen-100"
       />
    );

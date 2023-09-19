@@ -14,7 +14,7 @@ import scrollSvg from "@/assets/svgs/scroll-icon.svg";
 import arrowSvg from "@/assets/svgs/arrow-detail.svg";
 import circleSvg from "@/assets/svgs/circle-detail.svg";
 import squareSvg from "@/assets/svgs/square-detail.svg";
-import blurSvg from "@/assets/svgs/blur-detail.svg";
+import blurDetail from "@/assets/svgs/blur-detail.svg";
 import squareBottomBg from "@/assets/svgs/hero-square-bottom-bg.svg";
 
 export function HeroSection() {
@@ -30,12 +30,12 @@ export function HeroSection() {
    };
 
    return (
-      <section className="h-[calc(100vh-118px)] relative overflow-hidden">
+      <section className="h-[95vh] md:h-[calc(100vh-118px)] relative overflow-hidden">
          <Container className="h-full relative">
             <div className="h-full grid place-content-center md:gap-4 min-[830px]:pt-0 min-[830px]:grid-cols-5 min-[830px]:items-center">
                {/* Hero text left */}
                <div className="md:col-span-3 md:justify-self-start z-20">
-                  <div className={`md:ml-[7%] ${sora.className}`}>
+                  <div className="md:ml-[7%]">
                      <motion.h2
                         variants={fadeInAnimationVariants}
                         initial="initial"
@@ -45,7 +45,7 @@ export function HeroSection() {
                            delay: 0.2,
                            ease: "easeInOut",
                         }}
-                        className="relative max-w-[11ch] font-semibold leading-[1.2] text-[36px] min-[500px]:text-[48px] md:leading-[1.14] lg:text-7xl before:content-['{'] before:inline-block before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:bg-clip-text before:text-transparent before:absolute before:ml-[-7%] after:content-['}'] after:inline-block after:bg-gradient-to-b after:from-customgreen-100 after:to-customgreen-200 after:bg-clip-text after:text-transparent after:absolute after:ml-[2%] z-10"
+                        className={`${sora.className} font-sora relative max-w-[11ch] font-semibold leading-[1.2] text-[36px] min-[500px]:text-[48px] md:leading-[1.14] lg:text-7xl before:content-['{'] before:inline-block before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:bg-clip-text before:text-transparent before:absolute before:ml-[-7%] after:content-['}'] after:inline-block after:bg-gradient-to-b after:from-customgreen-100 after:to-customgreen-200 after:bg-clip-text after:text-transparent after:absolute after:ml-[2%] z-10`}
                      >
                         Desenvolvedor Front End{" "}
                         <span className="text-customgreen-100">&</span>{" "}
@@ -55,7 +55,7 @@ export function HeroSection() {
                               src={underlineSvg}
                               fill
                               alt="Underline Svg"
-                              className="mt-8"
+                              className="mt-6 min-[500px]:mt-7 lg:mt-10"
                            />
                         </span>{" "}
                         Design
@@ -93,7 +93,7 @@ export function HeroSection() {
                <Image
                   src={scrollSvg}
                   alt="Scroll icon detail"
-                  className="absolute animate-bounce bottom-[10%] left-1/2 transform -translate-x-1/2"
+                  className="absolute animate-bounce bottom-[7%] left-1/2 transform -translate-x-1/2"
                />
             </RevealSvg>
             <RevealSvg>
@@ -119,14 +119,14 @@ export function HeroSection() {
             </RevealSvg>
             <RevealSvg>
                <Image
-                  src={blurSvg}
+                  src={blurDetail}
                   alt="Blur background detail 1"
                   className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10"
                />
             </RevealSvg>
             <RevealSvg>
                <Image
-                  src={blurSvg}
+                  src={blurDetail}
                   alt="Blur background detail 2"
                   className="absolute -bottom-[10%] -left-[8%] -z-10"
                />

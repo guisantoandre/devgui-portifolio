@@ -49,7 +49,7 @@ export const technologiesData = [
 
 export const coursesData: CoursesType[] = [
    {
-      title: "Web Design Completo",
+      title: "Web Design",
       company: "Origamid",
       hours: "44h",
       link: "https://www.origamid.com/certificate/0c9093e7",
@@ -67,7 +67,7 @@ export const coursesData: CoursesType[] = [
       link: "https://www.origamid.com/certificate/e634a3d6",
    },
    {
-      title: "UI Design Avançado",
+      title: "UI Design",
       company: "Origamid",
       hours: "30h",
       link: "https://www.origamid.com/certificate/6ce6a7b1",

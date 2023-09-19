@@ -15,7 +15,9 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en" className="scroll-smooth relative">
-         <body className={`${inter.className} bg-customblue-300 text-white`}>
+         <body
+            className={`${inter.variable} font-inter bg-customblue-300 text-white`}
+         >
             {children}
          </body>
       </html>

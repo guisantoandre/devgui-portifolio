@@ -15,7 +15,7 @@ export function Experience() {
    return (
       <section
          id="experience"
-         className="scroll-mt-24 bg-customgrey-100 rounded-t-[24px] text-customblue-400"
+         className="scroll-mt-8 bg-customgrey-100 rounded-t-[24px] text-customblue-400 md:scroll-mt-10"
       >
          <Container className="relative py-20 flex flex-col items-center">
             <Title className="mb-20">Experiência</Title>

@@ -31,9 +31,9 @@ export function AboutMe() {
    return (
       <section
          id="about-me"
-         className="scroll-mt-24 bg-customblue-400 min-h-screen"
+         className="scroll-mt-8 bg-customblue-400 min-h-[90vh] md:scroll-mt-10"
       >
-         <Container className="relative py-20 min-h-screen flex flex-col items-center">
+         <Container className="relative py-20 min-h-[90vh] flex flex-col items-center">
             <Title isBlue className="md:mb-6">
                Sobre mim
             </Title>
@@ -44,6 +44,7 @@ export function AboutMe() {
                      src="/me.png"
                      alt="Profile picture"
                      fill
+                     sizes="100vw"
                      className="object-contain"
                   />
                </RevealImg>
@@ -88,7 +89,7 @@ export function AboutMe() {
                <Image
                   src={detail1}
                   alt="About me detail svg"
-                  className="absolute top-[15%] right-0"
+                  className="absolute top-[10%] right-0"
                />
                <Image
                   src={detail2}

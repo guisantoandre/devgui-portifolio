@@ -14,7 +14,7 @@ export default function Courses({ data }: CoursesProps) {
             {data.map((item) => (
                <li
                   key={item.title}
-                  className="flex items-center justify-between"
+                  className="flex items-center gap-1 justify-between"
                >
                   <span className="font-medium">
                      {item.title}
@@ -28,7 +28,7 @@ export default function Courses({ data }: CoursesProps) {
                      <a
                         href={item.link}
                         target="_blank"
-                        className="inline-block p-2 bg-customgrey-200 border border-neutral-300 hover:bg-customgrey-100 transition-all duration-75 rounded-[3px]"
+                        className="shrink-0 p-2 bg-customgrey-200 border border-neutral-300 hover:bg-customgrey-100 transition-all duration-75 rounded-[3px]"
                      >
                         <img
                            src="/graduation-cap-icon.svg"

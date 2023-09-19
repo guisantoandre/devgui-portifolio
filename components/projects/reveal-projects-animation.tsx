@@ -45,8 +45,13 @@ export function RevealProjects({ item, index }: RevealProjectsProps) {
                {item.title}
             </h4>
             <div className="flex gap-2">
-               {item.icons.map((icon) => (
-                  <img src={icon.src} alt={icon.alt} className="w-5" />
+               {item.icons.map((icon, index) => (
+                  <img
+                     key={index}
+                     src={icon.src}
+                     alt={icon.alt}
+                     className="w-5"
+                  />
                ))}
             </div>
          </div>
