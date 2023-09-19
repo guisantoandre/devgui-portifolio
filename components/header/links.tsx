@@ -2,16 +2,15 @@
 
 import { useEffect, useState } from "react";
 
+import { allLinks } from "@/utils/all-links";
 import { Links } from "@/types/links";
 
-export function Links() {
-   const allLinks = [
-      { text: "Sobre", href: "#about-me", active: false },
-      { text: "Experiência", href: "#experience", active: false },
-      { text: "Projetos", href: "#projects", active: false },
-      { text: "Contato", href: "#contact", active: false },
-   ];
+type LinksProps = {
+   onClick: () => void;
+   open: boolean;
+};
 
+export function Links({ onClick, open }: LinksProps) {
    const [links, setLinks] = useState<Links[]>(allLinks);
 
    function handleClickedLink(clickedLink: Links) {
@@ -68,25 +67,43 @@ export function Links() {
    }, [links]);
 
    return (
-      <nav className="flex items-center justify-between">
+      // md:flex-row md:items-center
+      <nav className="relative flex flex-col justify-between gap-y-10">
+         <div
+            className="absolute -top-8 -left-20 bg-customblue-400 rounded-tl-[12px] rounded-bl-[12px] p-5 cursor-pointer md:hidden"
+            onClick={() => onClick()}
+         >
+            <img
+               src="/open-menu-icon.svg"
+               alt="Open menu icon"
+               className={`${open ? "hidden" : "block"} w-[18px]`}
+            />
+            <img
+               src="/close-menu-icon.svg"
+               alt="Open menu icon"
+               className={`${open ? "block" : "hidden"} w-[18px]`}
+            />
+         </div>
          <a href="#">
             <img src="/devgui-logo.png" alt="Devgui logo" />
          </a>
-         <ul className="flex gap-10">
+         {/* md:flex-row md:items-center */}
+         <ul className="flex flex-col gap-10">
             {links.map((link) => (
                <li key={link.text} className={`tracking-wider`}>
                   <a
                      href={link.href}
                      className={`
-                     relative after:block after:absolute after:w-[0%] after:h-[2px] after:duration-100 after:bg-white hover:after:w-[60%]
+                     relative flex items-center gap-x-3 text-sm md:text-base md:after:block md:after:absolute md:after:w-[0%] md:after:h-[2px] md:after:duration-100 md:after:bg-white md:hover:after:w-[60%]
                      ${
                         link.active
-                           ? "after:block after:w-[60%] after:h-[2px] after:bg-white"
+                           ? "md:after:block md:after:w-[60%] md:after:h-[2px] md:after:bg-white"
                            : ""
                      }
                      `}
                      onClick={() => handleClickedLink(link)}
                   >
+                     <img src={link.icon} alt="asdfa" />
                      {link.text}
                   </a>
                </li>
