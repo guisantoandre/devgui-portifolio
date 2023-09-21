@@ -45,7 +45,7 @@ export function HeroSection() {
                            delay: 0.2,
                            ease: "easeInOut",
                         }}
-                        className={`${sora.className} font-sora relative max-w-[11ch] font-semibold leading-[1.2] text-[36px] min-[500px]:text-[48px] md:leading-[1.14] lg:text-7xl before:content-['{'] before:inline-block before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:bg-clip-text before:text-transparent before:absolute before:ml-[-7%] after:content-['}'] after:inline-block after:bg-gradient-to-b after:from-customgreen-100 after:to-customgreen-200 after:bg-clip-text after:text-transparent after:absolute after:ml-[2%] z-10`}
+                        className={`${sora.className} font-sora relative max-w-[10ch] font-semibold leading-[1.2] text-[36px] min-[500px]:text-[48px] md:leading-[1.14] lg:text-7xl before:content-['{'] before:inline-block before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 before:bg-clip-text before:text-transparent before:absolute before:ml-[-7%] after:content-['}'] after:inline-block after:bg-gradient-to-b after:from-customgreen-100 after:to-customgreen-200 after:bg-clip-text after:text-transparent after:absolute after:ml-[2%] z-10`}
                      >
                         Desenvolvedor Front End{" "}
                         <span className="text-customgreen-100">&</span>{" "}
