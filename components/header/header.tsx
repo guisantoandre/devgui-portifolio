@@ -38,7 +38,7 @@ export function Header() {
    return (
       <header
          className={`fixed right-0 bottom-0 ${
-            open ? "translate-x-0" : "translate-x-[175px]"
+            open ? "translate-x-0" : "translate-x-[180px]"
          } transition py-8 z-50 bg-customblue-200/60 backdrop-blur-sm md:sticky md:top-0 md:translate-x-0 md:bg-customblue-300/60 md:transform md:duration-300 ${
             hideMenu ? "md:-translate-y-[100%]" : "md:-translate-y-0"
          }`}
