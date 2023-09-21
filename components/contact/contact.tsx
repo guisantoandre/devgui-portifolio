@@ -6,6 +6,7 @@ import { SocialMedia } from "./social-media";
 import { sora } from "@/utils/fonts";
 import { Emoji } from "@/components/ui/emoji";
 import squareTopSvg from "@/assets/svgs/contact-square-top-bg.svg";
+import blurDetail from "@/assets/svgs/blur-detail.svg";
 
 export function Contact() {
    return (
@@ -73,6 +74,11 @@ export function Contact() {
                      </SocialMedia>
                   </div>
                </div>
+               <Image
+                  src={blurDetail}
+                  alt="Blur background detail 1"
+                  className="absolute top-[10%] -z-10"
+               />
             </div>
          </Container>
          <Image

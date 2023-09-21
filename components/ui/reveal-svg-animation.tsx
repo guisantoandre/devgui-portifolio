@@ -7,7 +7,7 @@ export function RevealSvg({ children }: RevealSvgProps) {
    return (
       <motion.span
          initial={{ opacity: 0 }}
-         whileInView={{ opacity: 1 }}
+         animate={{ opacity: 1 }}
          viewport={{
             once: true,
          }}

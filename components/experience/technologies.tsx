@@ -1,3 +1,5 @@
+"use client";
+
 import { RevealItems } from "./reveal-technologies-animation";
 
 type TechnologiesProps = {
