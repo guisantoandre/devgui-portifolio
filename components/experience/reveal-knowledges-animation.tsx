@@ -26,7 +26,7 @@ export function RevealKnowledges({ index }: { index: number }) {
          }}
          custom={index}
          key={index}
-         className="absolute inset-0 bg-customgreen-100"
+         className="absolute inset-0 bg-customgrey-200"
       />
    );
 }

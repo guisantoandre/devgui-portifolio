@@ -47,7 +47,7 @@ export const codingData: CodingProjectsType[] = [
 export const designData: DesignProjectsType[] = [
    {
       title: "Amplixel",
-      link: "",
+      link: "https://www.behance.net/gallery/180545081/Amplixel-Logotipo",
       icons: [
          { src: "/illustrator-icon.svg", alt: "Illustrator icon svg" },
          { src: "/photoshop-icon.svg", alt: "Photoshop icon svg" },
