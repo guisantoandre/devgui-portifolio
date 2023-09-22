@@ -93,7 +93,7 @@ export function HeroSection() {
                <Image
                   src={scrollSvg}
                   alt="Scroll icon detail"
-                  className="absolute animate-bounce bottom-[7%] left-1/2 transform -translate-x-1/2"
+                  className="absolute animate-bounce bottom-[10%] left-1/2 transform -translate-x-1/2"
                />
             </RevealSvg>
             <RevealSvg>
@@ -107,7 +107,7 @@ export function HeroSection() {
                <Image
                   src={circleSvg}
                   alt="Circle icon detail"
-                  className="animate-spin-5 absolute bottom-[15%] left-[30%] -z-10"
+                  className="animate-spin-5 absolute bottom-[18%] left-[30%] -z-10"
                />
             </RevealSvg>
             <RevealSvg>
