@@ -49,12 +49,14 @@ export function Contact() {
                         src="/email-icon.svg"
                         alt="Email icon svg"
                         className="md:w-6"
+                        aria-hidden
                      />
                      import.devgui
                      <img
                         src="/arrow-up-right.svg"
                         alt="Arrow up icon svg"
                         className="transition-all ease-out group-hover:origin-center group-hover:-rotate-45 md:w-4"
+                        aria-hidden
                      />{" "}
                   </a>
                </h2>

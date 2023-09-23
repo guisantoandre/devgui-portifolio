@@ -30,11 +30,13 @@ export function Experience() {
                src={detailBg}
                alt="Background detail svg"
                className="hidden md:block md:absolute md:left-4"
+               aria-hidden
             />
             <Image
                src={detailBg}
                alt="Background detail svg"
                className="hidden md:block md:absolute md:right-4 md:rotate-90 lg:right-4 lg:bottom-20 lg:rotate-180"
+               aria-hidden
             />
          </Container>
       </section>

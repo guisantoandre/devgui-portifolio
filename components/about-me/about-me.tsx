@@ -90,32 +90,38 @@ export function AboutMe() {
                   src={detail1}
                   alt="About me detail svg"
                   className="absolute top-[10%] right-0"
+                  aria-hidden
                />
                <Image
                   src={detail2}
                   alt="About me detail svg"
                   className="hidden md:absolute md:block md:bottom-[5%] md:left-[35%]"
+                  aria-hidden
                />
             </div>
             <Image
                src={cornerDetail}
                alt="About me detail svg"
                className="hidden md:block md:absolute md:top-20 md:left-5"
+               aria-hidden
             />
             <Image
                src={cornerDetail}
                alt="About me detail svg"
                className="hidden md:block md:absolute md:top-20 md:right-5 rotate-90"
+               aria-hidden
             />
             <Image
                src={cornerDetail}
                alt="About me detail svg"
                className="hidden md:block md:absolute md:bottom-20 md:right-5 rotate-180"
+               aria-hidden
             />
             <Image
                src={cornerDetail}
                alt="About me detail svg"
                className="hidden md:block md:absolute md:bottom-20 md:left-5 -rotate-90"
+               aria-hidden
             />
          </Container>
       </section>

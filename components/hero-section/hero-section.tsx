@@ -56,6 +56,7 @@ export function HeroSection() {
                               fill
                               alt="Underline Svg"
                               className="mt-6 min-[500px]:mt-7 lg:mt-10"
+                              aria-hidden
                            />
                         </span>{" "}
                         Design
@@ -75,7 +76,7 @@ export function HeroSection() {
                         <Emoji
                            role="img"
                            aria-label="Earth icon img"
-                           aria-hidden="true"
+                           aria-hidden
                         >
                            🌎
                         </Emoji>
@@ -94,6 +95,7 @@ export function HeroSection() {
                   src={scrollSvg}
                   alt="Scroll icon detail"
                   className="absolute animate-bounce bottom-[10%] left-1/2 transform -translate-x-1/2"
+                  aria-hidden
                />
             </RevealSvg>
             <RevealSvg>
@@ -101,6 +103,7 @@ export function HeroSection() {
                   src={arrowSvg}
                   alt="Arrow icon detail"
                   className="animate-spin-4 absolute top-[8%] left-[8%] -z-10"
+                  aria-hidden
                />
             </RevealSvg>
             <RevealSvg>
@@ -108,6 +111,7 @@ export function HeroSection() {
                   src={circleSvg}
                   alt="Circle icon detail"
                   className="animate-spin-5 absolute bottom-[18%] left-[30%] -z-10"
+                  aria-hidden
                />
             </RevealSvg>
             <RevealSvg>
@@ -115,6 +119,7 @@ export function HeroSection() {
                   src={squareSvg}
                   alt="Circle icon detail"
                   className="animate-spin-10 absolute top-[25%] md:top-[10%] -right-[5%] -z-10"
+                  aria-hidden
                />
             </RevealSvg>
             <RevealSvg>
@@ -122,6 +127,7 @@ export function HeroSection() {
                   src={blurDetail}
                   alt="Blur background detail 1"
                   className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10"
+                  aria-hidden
                />
             </RevealSvg>
             <RevealSvg>
@@ -129,6 +135,7 @@ export function HeroSection() {
                   src={blurDetail}
                   alt="Blur background detail 2"
                   className="absolute -bottom-[10%] -left-[8%] -z-10"
+                  aria-hidden
                />
             </RevealSvg>
          </Container>
@@ -137,6 +144,7 @@ export function HeroSection() {
                src={squareBottomBg}
                alt="Square bottom svg background"
                className="absolute bottom-0 w-full"
+               aria-hidden
             />
          </RevealSvg>
       </section>

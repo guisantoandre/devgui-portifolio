@@ -111,7 +111,7 @@ export function Links({ onClick, open, onClose }: LinksProps) {
                   >
                      <img
                         src={link.icon}
-                        alt="icon menu"
+                        alt="Menu icon"
                         className="md:hidden"
                      />
                      {link.text}

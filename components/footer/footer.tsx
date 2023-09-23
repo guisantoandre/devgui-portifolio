@@ -20,6 +20,7 @@ export function Footer() {
                src="/lettermark.svg"
                alt="Lettermark icon svg"
                className="w-6"
+               aria-hidden
             />
          </Container>
       </div>
