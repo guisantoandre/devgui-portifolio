@@ -88,7 +88,7 @@ export function Links({ onClick, open, onClose }: LinksProps) {
          </div>
          <a href="#">
             <img
-               src="/devgui-logo.png"
+               src="/devgui-logo.svg"
                alt="Devgui logo"
                className="w-[90px] md:w-[110px]"
             />
