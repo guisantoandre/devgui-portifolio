@@ -72,7 +72,7 @@ export function Links({ onClick, open, onClose }: LinksProps) {
       // md:flex-row md:items-center
       <nav className="relative flex flex-col justify-between gap-y-9 md:flex-row md:items-center">
          <div
-            className="absolute -top-[32px] -left-[76px] bg-customblue-100 backdrop-blur-sm rounded-tl-[4px] rounded-bl-[4px] p-3 cursor-pointer select-none md:hidden"
+            className="absolute -top-[32px] -left-[67px] bg-customblue-100 backdrop-blur-sm rounded-tl-[4px] rounded-bl-[4px] px-2 py-3 cursor-pointer select-none md:hidden"
             onClick={() => onClick()}
          >
             <img
