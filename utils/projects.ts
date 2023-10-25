@@ -42,6 +42,15 @@ export const codingData: CodingProjectsType[] = [
          { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
       ],
    },
+   {
+      title: "Salesboard",
+      link: "https://salesboard1.vercel.app/",
+      icons: [
+         { src: "/nextjs-icon.svg", alt: "Next icon svg" },
+         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
+         { src: "/shadcnui.svg", alt: "Shadcn/ui icon svg" },
+      ],
+   },
 ];
 
 export const designData: DesignProjectsType[] = [

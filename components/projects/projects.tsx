@@ -2,7 +2,6 @@ import { Container } from "@/components/ui/container";
 import { Title } from "@/components/ui/title";
 import { codingData, designData } from "@/utils/projects";
 import { ProjectsItemsList } from "./projects-items-list";
-import Image from "next/image";
 
 export function Projects() {
    return (
