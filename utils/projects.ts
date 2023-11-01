@@ -51,6 +51,14 @@ export const codingData: CodingProjectsType[] = [
          { src: "/shadcnui.svg", alt: "Shadcn/ui icon svg" },
       ],
    },
+   {
+      title: "Youtube Clone",
+      link: "https://nottube.vercel.app/",
+      icons: [
+         { src: "/nextjs-icon.svg", alt: "Next icon svg" },
+         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
+      ],
+   },
 ];
 
 export const designData: DesignProjectsType[] = [
