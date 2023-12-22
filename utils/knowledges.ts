@@ -1,4 +1,4 @@
-import { CoursesType, KnowledgesType } from "@/types/knowledges";
+import { CoursesType, KnowledgesType } from "@/types/knowledges-types";
 
 export const knowledgesData: KnowledgesType[] = [
    {

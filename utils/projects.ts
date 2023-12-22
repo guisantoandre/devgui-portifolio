@@ -1,4 +1,4 @@
-import { CodingProjectsType, DesignProjectsType } from "@/types/projects";
+import { CodingProjectsType, DesignProjectsType } from "@/types/projects-types";
 
 export const codingData: CodingProjectsType[] = [
    {
@@ -18,25 +18,17 @@ export const codingData: CodingProjectsType[] = [
       ],
    },
    {
-      title: "Mango",
-      link: "https://mango-c3c69.web.app/",
+      title: "ToDue",
+      link: "https://todueapp.vercel.app/",
       icons: [
-         { src: "/react-icon.svg", alt: "React icon svg" },
+         { src: "/nextjs-icon.svg", alt: "NextJS icon svg" },
          { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
-         { src: "/firebase-icon.svg", alt: "Firebase icon svg" },
+         { src: "/xatadb-icon.svg", alt: "Xata icon svg" },
       ],
    },
    {
       title: "Coolgen",
       link: "https://coolgen.netlify.app/",
-      icons: [
-         { src: "/react-icon.svg", alt: "React icon svg" },
-         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
-      ],
-   },
-   {
-      title: "Todo App",
-      link: "https://dtasklist.netlify.app/",
       icons: [
          { src: "/react-icon.svg", alt: "React icon svg" },
          { src: "/typescript-icon.svg", alt: "Typescript icon svg" },

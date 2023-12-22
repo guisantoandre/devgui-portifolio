@@ -1,4 +1,4 @@
-import { CoursesType } from "@/types/knowledges";
+import { CoursesType } from "@/types/knowledges-types";
 
 type CoursesProps = {
    data: CoursesType[];

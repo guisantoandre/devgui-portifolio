@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { CodingProjectsType } from "@/types/projects";
+import { CodingProjectsType } from "@/types/projects-types";
 import { sora } from "@/utils/fonts";
 
 type RevealProjectsProps = {

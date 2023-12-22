@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { allLinks } from "@/utils/all-links";
-import { Links } from "@/types/links";
+import { Links } from "@/types/links-types";
 
 type LinksProps = {
    onClick: () => void;

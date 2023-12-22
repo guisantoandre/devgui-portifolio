@@ -1,4 +1,4 @@
-import { Links } from "@/types/links";
+import { Links } from "@/types/links-types";
 
 export const allLinks: Links[] = [
    {

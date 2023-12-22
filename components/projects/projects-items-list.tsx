@@ -1,5 +1,4 @@
-import { CodingProjectsType, DesignProjectsType } from "@/types/projects";
-import { sora } from "@/utils/fonts";
+import { CodingProjectsType, DesignProjectsType } from "@/types/projects-types";
 import { RevealProjects } from "./reveal-projects-animation";
 
 type ProjectsProps = React.ComponentProps<"div"> & {

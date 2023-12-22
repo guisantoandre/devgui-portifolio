@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 import { sora } from "@/utils/fonts";
-import { KnowledgesType } from "@/types/knowledges";
+import { KnowledgesType } from "@/types/knowledges-types";
 import { RevealKnowledges } from "./reveal-knowledges-animation";
 
 type KnowledgesProps = React.ComponentProps<"ul"> & {
