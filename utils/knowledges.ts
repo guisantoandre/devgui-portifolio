@@ -21,7 +21,7 @@ export const knowledgesData: KnowledgesType[] = [
       icon: "/figma-icon.svg",
       title: "Figma",
       text: [
-         "Figma como ferramenta principal para criação de interfaces de usuário e prototipagem de design, utilizando boas práticas como componetização e auto layout.",
+         "Figma como ferramenta principal para criação de interfaces de usuário e prototipagem de design, utilizando boas práticas como Componentes e Auto Layout.",
       ],
    },
    {
