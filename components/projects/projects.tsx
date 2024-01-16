@@ -13,7 +13,7 @@ export function Projects() {
             <Title isBlue className="mb-20">
                Projetos
             </Title>
-            <div className="grid grid-cols-1 flex-1 lg:grid-cols-2 lg:gap-10 w-full space-y-10 lg:space-y-0">
+            <div className="grid grid-cols-1 flex-1 min-[1200px]:grid-cols-2 lg:gap-10 w-full space-y-10 lg:space-y-0">
                <ProjectsItemsList data={codingData}>
                   Programação:
                </ProjectsItemsList>

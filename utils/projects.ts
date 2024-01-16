@@ -62,4 +62,22 @@ export const designData: DesignProjectsType[] = [
          { src: "/photoshop-icon.svg", alt: "Photoshop icon svg" },
       ],
    },
+   {
+      title: "Devgui - Desktop",
+      link: "https://www.figma.com/proto/uWHqZrXacynPkk5qImSBOf/devgui---Portif%C3%B3lio-Pessoal?page-id=0%3A1&type=design&node-id=1-2&viewport=775%2C384%2C0.24&t=8hCgQ643gqz23RbU-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design",
+      icons: [{ src: "/figma-icon-2.svg", alt: "Figma icon svg" }],
+   },
+   {
+      title: "Devgui - Mobile",
+      link: "https://www.figma.com/proto/uWHqZrXacynPkk5qImSBOf/devgui---Portif%C3%B3lio-Pessoal?page-id=243%3A1005&type=design&node-id=243-1470&viewport=878%2C1650%2C0.61&t=CsiBZCje9vrWI7kC-1&scaling=scale-down&starting-point-node-id=243%3A1470&mode=design",
+      icons: [{ src: "/figma-icon-2.svg", alt: "Figma icon svg" }],
+   },
+   {
+      title: "Huss - Desktop",
+      link: "https://www.figma.com/proto/vqg3pzdmOGajVdHQOCtbxX/Huss?page-id=139%3A2&type=design&node-id=713-2&viewport=57%2C237%2C0.13&t=SLGn29T4SKUcxi2Y-1&scaling=scale-down&starting-point-node-id=713%3A2&mode=design",
+      icons: [
+         { src: "/hammer-icon.svg", alt: "Figma icon svg" },
+         { src: "/figma-icon-2.svg", alt: "Figma icon svg" },
+      ],
+   },
 ];

@@ -38,13 +38,13 @@ export function RevealProjects({ item, index }: RevealProjectsProps) {
          key={item.title}
          className="bg-[#10101E] flex items-center justify-between gap-3 p-5 rounded-[3px] border border-[#23232F] cursor-pointer group transition-all ease-out hover:duration-200 hover:scale-[1.02] hover:bg-customgreen-100"
       >
-         <div className="flex items-center gap-3">
+         <div className="flex flex-wrap items-center gap-3">
             <h4
                className={`${sora.className} relative flex items-center gap-3 font-bold transition-all ease-out duration-500 group-hover:text-customblue-400 before:block before:w-[2px] before:h-4 before:bg-gradient-to-b before:from-customgreen-100 before:to-customgreen-200 group-hover:before:from-customblue-400 group-hover:before:to-customblue-400`}
             >
                {item.title}
             </h4>
-            <div className="flex gap-2">
+            <div className="flex gap-2 shrink-0">
                {item.icons.map((icon, index) => (
                   <img
                      key={index}
