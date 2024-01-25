@@ -45,12 +45,6 @@ export function Contact() {
                      href="mailto:import.devgui@gmail.com"
                      className={`${sora.className} group text-lg font-medium min-[450px]:text-2xl min-[450px]:font-normal underline w-fit flex items-center gap-2 md:text-3xl`}
                   >
-                     <img
-                        src="/email-icon.svg"
-                        alt="Email icon svg"
-                        className="md:w-6"
-                        aria-hidden
-                     />
                      import.devgui
                      <img
                         src="/arrow-up-right.svg"
