@@ -10,6 +10,7 @@ import Technologies from "./technologies";
 import Courses from "./courses";
 import detailBg from "@/assets/svgs/experience-detail-bg.svg";
 import Image from "next/image";
+import { CvDownloadButton } from "./cv-download-button";
 
 export function Experience() {
    return (
@@ -20,10 +21,13 @@ export function Experience() {
          <Container className="relative py-20 flex flex-col items-center">
             <Title className="mb-20">Experiência</Title>
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
-               <Knowledges data={knowledgesData} />
+               <div>
+                  <Knowledges data={knowledgesData} />
+               </div>
                <div>
                   <Technologies data={technologiesData} />
                   <Courses data={coursesData} />
+                  <CvDownloadButton />
                </div>
             </div>
             <Image
