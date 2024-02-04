@@ -18,13 +18,15 @@ export default function Courses({ data }: CoursesProps) {
                >
                   <span className="font-medium">
                      {item.title}
-                     <span className="font-normal text-customgrey-300">
+                     {/* <span className="font-normal text-customgrey-300">
                         {" "}
                         / {item.company}
-                     </span>
+                     </span> */}
                   </span>
                   <span className="flex items-center gap-2 text-customgrey-300">
-                     {item.hours}
+                     <span className="hidden min-[400px]:block">
+                        {item.hours}
+                     </span>
                      <a
                         href={item.link}
                         target="_blank"

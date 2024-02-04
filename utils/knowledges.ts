@@ -9,19 +9,19 @@ export const knowledgesData: KnowledgesType[] = [
       ],
    },
    {
+      icon: "/figma-icon.svg",
+      title: "Figma",
+      text: [
+         "Figma como ferramenta principal para criação de interfaces de usuário e prototipagem de design, utilizando boas práticas como Componentes e Auto Layout.",
+      ],
+   },
+   {
       icon: "/monitor-icon.svg",
       title: "Desenvolvimento Web",
       text: [
          "HTML5 para estruturar e dar significado ao conteúdo usando tags semânticas.",
          "CSS3 para aplicação da UI usando FlexBox e CSS Grid.",
          "JavaScript para criar interações, otimizando a experiência e guiando a atenção do usuário.",
-      ],
-   },
-   {
-      icon: "/figma-icon.svg",
-      title: "Figma",
-      text: [
-         "Figma como ferramenta principal para criação de interfaces de usuário e prototipagem de design, utilizando boas práticas como Componentes e Auto Layout.",
       ],
    },
    {
@@ -49,7 +49,7 @@ export const technologiesData = [
 
 export const coursesData: CoursesType[] = [
    {
-      title: "Web Design",
+      title: "Web Design Completo",
       company: "Origamid",
       hours: "44h",
       link: "https://www.origamid.com/certificate/0c9093e7",
@@ -67,7 +67,7 @@ export const coursesData: CoursesType[] = [
       link: "https://www.origamid.com/certificate/e634a3d6",
    },
    {
-      title: "UI Design",
+      title: "UI Design Avançado",
       company: "Origamid",
       hours: "30h",
       link: "https://www.origamid.com/certificate/6ce6a7b1",
@@ -77,5 +77,11 @@ export const coursesData: CoursesType[] = [
       company: "Origamid",
       hours: "22h",
       link: "https://www.origamid.com/certificate/37907eb0",
+   },
+   {
+      title: "React com TypeScript",
+      company: "Origamid",
+      hours: "10h",
+      link: "https://www.origamid.com/certificate/c2c56380",
    },
 ];
