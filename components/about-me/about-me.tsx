@@ -64,10 +64,10 @@ export function AboutMe() {
                         Olá, meu nome é Guilherme, sou apaixonado por tecnologia
                         e entusiasta na área de programação onde dedico boa
                         parte dos meus estudos em <strong>HTML</strong>,{" "}
-                        <strong>CSS</strong> e <strong>JavaScript</strong>.
-                        Também me aventuro em outras tecnologias como{" "}
-                        <strong>ReactJS</strong>, <strong>Typescript</strong>,{" "}
-                        <strong>Tailwind</strong>, <strong>NextJS</strong> e{" "}
+                        <strong>CSS</strong> e <strong>JavaScript</strong>, mas
+                        com foco principal em tecnologias como{" "}
+                        <strong>ReactJS</strong>, <strong>TypeScript</strong>,{" "}
+                        <strong>Tailwind CSS</strong>, <strong>NextJS</strong> e{" "}
                         <strong>
                            <Link
                               href="https://github.com/guisantoandre"

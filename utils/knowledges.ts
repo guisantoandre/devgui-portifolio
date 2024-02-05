@@ -39,11 +39,11 @@ export const technologiesData = [
    "CSS",
    "Sass",
    "JavaScript",
-   "Typescript",
+   "TypeScript",
    "Git",
    "ReactJS",
    "NextJS",
-   "Tailwind",
+   "Tailwind CSS",
    "Figma",
 ];
 
