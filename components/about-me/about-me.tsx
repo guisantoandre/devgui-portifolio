@@ -61,12 +61,12 @@ export function AboutMe() {
                >
                   <div className="leading-[1.5] text-sm md:text-base">
                      <p className="mb-4">
-                        Olá, meu nome é Guilherme, sou apaixonado por tecnologia
-                        e entusiasta na área de programação onde dedico boa
-                        parte dos meus estudos em <strong>HTML</strong>,{" "}
-                        <strong>CSS</strong> e <strong>JavaScript</strong>, mas
-                        com foco principal em tecnologias como{" "}
-                        <strong>ReactJS</strong>, <strong>TypeScript</strong>,{" "}
+                        Olá, meu nome é Guilherme, entusiasta na área de
+                        programação que dedica boa parte dos estudos em{" "}
+                        <strong>HTML</strong>, <strong>CSS</strong> e{" "}
+                        <strong>JavaScript</strong>, mas com foco principal em
+                        tecnologias como <strong>ReactJS</strong>,{" "}
+                        <strong>TypeScript</strong>,{" "}
                         <strong>Tailwind CSS</strong>, <strong>NextJS</strong> e{" "}
                         <strong>
                            <Link
