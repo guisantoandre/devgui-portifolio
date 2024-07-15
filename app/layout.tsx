@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { inter } from "@/utils/fonts";
 
 export const metadata: Metadata = {
-   title: "devgui - Portifólio Pessoal",
+   title: "Devgui - Portfólio Pessoal",
    description:
       "Este é um potifólio pessoal pra compartilhar um pouco sobre mim, meus trabalhos e habilidades.",
 };
