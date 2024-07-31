@@ -10,7 +10,6 @@ import Technologies from "./technologies";
 import Courses from "./courses";
 import detailBg from "@/assets/svgs/experience-detail-bg.svg";
 import Image from "next/image";
-import { CvDownloadButton } from "./cv-download-button";
 
 export function Experience() {
    return (
@@ -27,7 +26,6 @@ export function Experience() {
                <div>
                   <Technologies data={technologiesData} />
                   <Courses data={coursesData} />
-                  <CvDownloadButton />
                </div>
             </div>
             <Image
