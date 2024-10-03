@@ -2,36 +2,12 @@ import { CodingProjectsType, DesignProjectsType } from "@/types/projects-types";
 
 export const codingData: CodingProjectsType[] = [
    {
-      title: "Memo",
-      link: "https://memoogame.netlify.app/",
-      icons: [
-         { src: "/react-icon.svg", alt: "React icon svg" },
-         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
-      ],
-   },
-   {
-      title: "Seenema",
-      link: "https://seenema.vercel.app/",
-      icons: [
-         { src: "/nextjs-icon.svg", alt: "NextJS icon svg" },
-         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
-      ],
-   },
-   {
       title: "ToDue",
       link: "https://todueapp.vercel.app/",
       icons: [
          { src: "/nextjs-icon.svg", alt: "NextJS icon svg" },
          { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
          { src: "/xatadb-icon.svg", alt: "Xata icon svg" },
-      ],
-   },
-   {
-      title: "Coolgen",
-      link: "https://coolgen.netlify.app/",
-      icons: [
-         { src: "/react-icon.svg", alt: "React icon svg" },
-         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
       ],
    },
    {
@@ -44,10 +20,34 @@ export const codingData: CodingProjectsType[] = [
       ],
    },
    {
+      title: "Seenema",
+      link: "https://seenema.vercel.app/",
+      icons: [
+         { src: "/nextjs-icon.svg", alt: "NextJS icon svg" },
+         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
+      ],
+   },
+   {
       title: "Youtube Clone",
       link: "https://nottube.vercel.app/",
       icons: [
          { src: "/nextjs-icon.svg", alt: "Next icon svg" },
+         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
+      ],
+   },
+   {
+      title: "Coolgen",
+      link: "https://coolgen.netlify.app/",
+      icons: [
+         { src: "/react-icon.svg", alt: "React icon svg" },
+         { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
+      ],
+   },
+   {
+      title: "Memo",
+      link: "https://memoogame.netlify.app/",
+      icons: [
+         { src: "/react-icon.svg", alt: "React icon svg" },
          { src: "/typescript-icon.svg", alt: "Typescript icon svg" },
       ],
    },
